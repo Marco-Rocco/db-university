@@ -17,3 +17,14 @@ FROM
     `db-university`.courses
 WHERE
 	`cfu` > 10;
+
+
+
+n3
+
+SELECT 
+    *
+FROM
+    `db-university`.students
+WHERE
+	YEAR(CURDATE()) - YEAR(date_of_birth) > 30;
