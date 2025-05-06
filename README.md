@@ -52,3 +52,13 @@ WHERE
 	`date` = '2020-06-20'
 AND
 	`hour` > '14:00:00';
+
+
+n6
+
+SELECT 
+    *
+FROM
+    `db-university`.degrees
+WHERE
+	`level` = 'magistrale';
