@@ -62,3 +62,13 @@ FROM
     `db-university`.degrees
 WHERE
 	`level` = 'magistrale';
+
+    
+
+
+n7
+
+SELECT 
+    `id`
+FROM
+    `db-university`.departments;
