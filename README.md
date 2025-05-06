@@ -28,3 +28,15 @@ FROM
     `db-university`.students
 WHERE
 	YEAR(CURDATE()) - YEAR(date_of_birth) > 30;
+    
+    
+n4
+
+SELECT 
+    *
+FROM
+    `db-university`.courses
+WHERE
+	`year` = 1
+AND
+	`period` = 'I semestre'
