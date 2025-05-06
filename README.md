@@ -40,3 +40,15 @@ WHERE
 	`year` = 1
 AND
 	`period` = 'I semestre'
+
+
+n5
+
+SELECT 
+    *
+FROM
+    `db-university`.exams
+WHERE
+	`date` = '2020-06-20'
+AND
+	`hour` > '14:00:00';
