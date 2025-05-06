@@ -72,3 +72,14 @@ SELECT
     `id`
 FROM
     `db-university`.departments;
+
+
+
+N8
+
+SELECT 
+    *
+FROM
+    `db-university`.teachers
+WHERE
+`phone` IS NULL;
