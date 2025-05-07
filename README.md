@@ -124,3 +124,12 @@ GROUP BY
 	`vote`
 ORDER BY 
 	`vote`;
+
+
+N4
+
+SELECT 
+	COUNT(`name`)
+FROM
+    `degrees`
+GROUP BY `department_id`;
