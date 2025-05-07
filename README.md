@@ -1,3 +1,5 @@
+DAY 2
+
 n 1
 
 SELECT 
@@ -83,3 +85,20 @@ FROM
     `db-university`.teachers
 WHERE
 `phone` IS NULL;
+
+
+
+
+
+DAY 3
+
+
+N1
+
+
+SELECT 
+  COUNT(*), YEAR(`enrolment_date`) AS `enrolling_year`
+FROM
+    `students`
+GROUP BY `enrolling_year`
+ORDER BY `enrolling_year`;
