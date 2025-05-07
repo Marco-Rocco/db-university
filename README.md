@@ -102,3 +102,13 @@ FROM
     `students`
 GROUP BY `enrolling_year`
 ORDER BY `enrolling_year`;
+
+
+N2
+
+SELECT
+	COUNT(*), `office_address`
+FROM
+	`teachers`
+GROUP BY
+	`office_address`;
