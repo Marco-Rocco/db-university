@@ -133,3 +133,16 @@ SELECT
 FROM
     `degrees`
 GROUP BY `department_id`;
+
+
+N1 JOIN
+
+
+SELECT 
+    `students`.*,  `degrees`.`name`
+FROM
+    `students`
+        INNER JOIN
+    `degrees` ON `degrees`.`id` = `students`.`degree_id`
+WHERE
+    `degrees`.`name` LIKE '%economia%'
