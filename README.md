@@ -112,3 +112,15 @@ FROM
 	`teachers`
 GROUP BY
 	`office_address`;
+
+
+N3
+
+SELECT
+	AVG(`vote`) AS `average_vote`
+FROM
+	`exam_student`
+GROUP BY
+	`vote`
+ORDER BY 
+	`vote`;
