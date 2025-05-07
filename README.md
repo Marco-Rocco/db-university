@@ -159,3 +159,17 @@ FROM
 WHERE
     `departments`.`name` = 'Dipartimento di Neuroscienze'
         AND `degrees`.`level` = 'Magistrale';
+
+
+N3 JOIN 
+
+SELECT 
+    `teachers`.`surname`, `course_teacher`.`course_id`
+FROM
+    `teachers`
+        INNER JOIN
+    `course_teacher` ON `course_teacher`.`teacher_id` = `teachers`.`id`
+        INNER JOIN
+    `courses` ON `course_teacher`.`course_id` = `courses`.`id`
+WHERE
+    `teachers`.`id` = 44
