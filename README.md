@@ -146,3 +146,16 @@ FROM
     `degrees` ON `degrees`.`id` = `students`.`degree_id`
 WHERE
     `degrees`.`name` LIKE '%economia%'
+
+N2 JOIN 
+
+
+SELECT 
+    `degrees`.name,  `degrees`.`level`, `departments`.`name` AS `department_name`
+FROM
+    `degrees`
+        INNER JOIN
+    `departments` ON `departments`.`id` = `degrees`.`department_id`
+WHERE
+    `departments`.`name` = 'Dipartimento di Neuroscienze'
+        AND `degrees`.`level` = 'Magistrale';
