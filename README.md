@@ -187,3 +187,14 @@ FROM
     INNER JOIN
     `departments` ON `degrees`.`department_id` = `departments`.`id`
     ORDER BY `students`.`surname`, `students`.`name`
+
+
+N5 JOIN
+
+
+SELECT 
+    `degrees`.name, `degrees`.level, `courses`.name, `teachers`.name
+FROM
+    `degrees`
+    INNER JOIN  `courses` ON `courses`.`degree_id` = `degrees`.id
+    INNER JOIN `teachers` ON `courses`.`degree_id` = `teachers`.id;
