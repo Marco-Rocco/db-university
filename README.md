@@ -173,3 +173,17 @@ FROM
     `courses` ON `course_teacher`.`course_id` = `courses`.`id`
 WHERE
     `teachers`.`id` = 44
+
+
+
+N4 JOIN
+
+SELECT 
+    *
+FROM
+    `students`
+    INNER JOIN 
+    `degrees` ON `students`.`degree_id` = `degrees`.`id`
+    INNER JOIN
+    `departments` ON `degrees`.`department_id` = `departments`.`id`
+    ORDER BY `students`.`surname`, `students`.`name`
